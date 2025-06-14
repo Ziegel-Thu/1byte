@@ -6,7 +6,7 @@
 # It is included in the main 'build.ninja'.
 
 # =============================================================================
-# Project: 1bit
+# Project: 1byte
 # Configurations: Debug
 # =============================================================================
 # =============================================================================
@@ -14,7 +14,7 @@
 #############################################
 # Rule for compiling ASM files.
 
-rule ASM_COMPILER__1bit_unscanned_Debug
+rule ASM_COMPILER__1byte_unscanned_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ${LAUNCHER}${CODE_CHECK}/opt/homebrew/bin/arm-none-eabi-gcc $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -24,7 +24,7 @@ rule ASM_COMPILER__1bit_unscanned_Debug
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER__1bit_unscanned_Debug
+rule C_COMPILER__1byte_unscanned_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ${LAUNCHER}${CODE_CHECK}/opt/homebrew/bin/arm-none-eabi-gcc $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -34,8 +34,8 @@ rule C_COMPILER__1bit_unscanned_Debug
 #############################################
 # Rule for linking C executable.
 
-rule C_EXECUTABLE_LINKER__1bit_Debug
-  command = $PRE_LINK && /opt/homebrew/bin/arm-none-eabi-gcc $FLAGS -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -T "/Users/apple/Desktop/Damiao_remote/1byte/STM32H723XG_FLASH.ld" --specs=nano.specs -Wl,-Map=1bit.map -Wl,--gc-sections -Wl,--start-group -lc -lm -Wl,--end-group -Wl,--print-memory-usage $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+rule C_EXECUTABLE_LINKER__1byte_Debug
+  command = $PRE_LINK && /opt/homebrew/bin/arm-none-eabi-gcc $FLAGS -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -T "/Users/apple/Desktop/Damiao_remote/1byte/STM32H723XG_FLASH.ld" --specs=nano.specs -Wl,-Map=1byte.map -Wl,--gc-sections -Wl,--start-group -lc -lm -Wl,--end-group -Wl,--print-memory-usage $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking C executable $TARGET_FILE
   restat = $RESTAT
 

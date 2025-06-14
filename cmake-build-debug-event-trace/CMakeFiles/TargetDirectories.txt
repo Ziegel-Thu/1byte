@@ -1,0 +1,6 @@
+/Users/apple/Desktop/Damiao_remote/1byte/cmake-build-debug-event-trace/CMakeFiles/1byte.dir
+/Users/apple/Desktop/Damiao_remote/1byte/cmake-build-debug-event-trace/CMakeFiles/edit_cache.dir
+/Users/apple/Desktop/Damiao_remote/1byte/cmake-build-debug-event-trace/CMakeFiles/rebuild_cache.dir
+/Users/apple/Desktop/Damiao_remote/1byte/cmake-build-debug-event-trace/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
+/Users/apple/Desktop/Damiao_remote/1byte/cmake-build-debug-event-trace/cmake/stm32cubemx/CMakeFiles/edit_cache.dir
+/Users/apple/Desktop/Damiao_remote/1byte/cmake-build-debug-event-trace/cmake/stm32cubemx/CMakeFiles/rebuild_cache.dir

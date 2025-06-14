@@ -1,4 +1,4 @@
-/Users/apple/Desktop/Damiao_remote/1byte/cmake-build-debug/CMakeFiles/1bit.dir
+/Users/apple/Desktop/Damiao_remote/1byte/cmake-build-debug/CMakeFiles/1byte.dir
 /Users/apple/Desktop/Damiao_remote/1byte/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/apple/Desktop/Damiao_remote/1byte/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /Users/apple/Desktop/Damiao_remote/1byte/cmake-build-debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
